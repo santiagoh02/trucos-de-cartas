@@ -1,0 +1,11 @@
+function pickNamedPile(piles) {
+  if (typeof piles !== 'object' || piles === null || !('chosen' in piles)) {
+    return undefined;
+  }
+
+  const newDeck = piles;
+  return newDeck.chosen;
+}
+
+const piles = { chosen: [5, 4], disregarded: [7, 10] };
+console.log(pickNamedPile(piles));
