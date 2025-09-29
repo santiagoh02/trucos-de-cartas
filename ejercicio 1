@@ -1,0 +1,11 @@
+function getFirstCard(deck) {
+  if (!Array.isArray(deck) || deck.length === 0) {
+    return undefined;
+  }
+  
+  const [first] = deck;
+  return first;
+}
+
+const deck = [5, 9, 7, 1, 8];
+console.log(getFirstCard(deck));
